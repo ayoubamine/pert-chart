@@ -1,8 +1,8 @@
 # Pert-Chart
 
-![alt text](images/home.png)
+![Home](images/home.png)
 
-![alt text](images/chart.png)
+![Chart](images/chart.png)
 
 ## Build Setup
 
