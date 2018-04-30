@@ -185,13 +185,14 @@ export default {
       else return "/";
     },
     addTask() {
-      const ids = this.taskDependsOn.split(",").map(task => task.trim().toUpperCase());
+      const ids = this.taskDependsOn.length 
+                  ? this.taskDependsOn.split(",").map(task => task.trim().toUpperCase())
+                  : undefined;
       const duration = Number(this.taskDuration);
       this.taskId = this.taskId.toUpperCase();
 
       if (
         !this.taskId.length ||
-        !this.taskDependsOn.length ||
         isNaN(duration) ||
         duration <= 0
       ) {
